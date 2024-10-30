@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MaGiKS Geo Country Lite Support</title>
+<style type="text/css">
+<!--
+body {
+	background: #f8f8f8;
+	font-family: "Lucida Grande", "Lucida Sans", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+a {
+	color: #74141E;
+	text-decoration: none;
+}
+a:hover {
+	color: #74141E;
+	text-decoration: underline;
+}
+h3 {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	margin: 25px 0px 15px;
+	padding: 0px 0px 8px;
+	float: left;
+	width: 100%;
+	font-weight: normal;
+	line-height: 25px;
+	border-bottom: 1px solid #ddd;
+	color: #000000;
+}
+#wrapper {
+	margin: 0px auto;
+	width: 800px;
+}
+#container {
+	margin: 0px;
+	width: 748px;
+	background: #FFFFFF;
+	padding: 25px;
+	float: left;
+	border: 1px solid #ddd;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#logo {
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+#notice {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 100%;
+}
+p {
+	margin: 0px 0px 10px;
+	padding: 0px;
+	float: left;
+	width: 100%;
+}
+ol  {
+	margin-left: 35px;
+	padding-left: 0px;
+}
+ol li {
+	float: left;
+	width: 100%;
+	margin-bottom: 8px;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+}
+ul li {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+ul li a {
+	font-size: 15px;
+}
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="container">
+
+<div id="logo"><img src="http://geotargetingscripts.com/images/geocountrylite200x217.png" width="200" height="217" alt="Geo Country Lite" border="0" /></div>
+
+<h3>Thank you for downloading the <strong>MaGiKS Geo Country Lite</strong> WordPress Plugin</h3>
+
+<p>If you would like to see the latest examples of how this script can be used, check out the <a href="http://geotargetingscripts.com/category/usage-examples/" target="_blank">usage examples category</a> on our blog. Also be sure to check out our <a href="http://geotargetingscripts.com/faqs/" target="_blank">FAQ page</a> to get answers to commonly asked questions. And if you need to contact us for any reason feel free to <a href="http://geotargetingscripts.com/contact/" target="_blank">send us an email</a>.</p>
+
+<h3>What do you get in your zip file?</h3>
+<ol>
+<li>In the /magiks_geo_lite/ folder you will find the script file(s).</li>
+<li>In the /magiks_geo_lite/license/ folder you will find the GPL license and MaxMind database license files.</li>
+<li>In the /magiks_geo_lite/GeoIP/ folder you will find the binary database (from MaxMind) and any supporting script files.</li>
+<li>In the /magiks_geo_lite/flags/ folder you will find both the small and large versions of the country flag images.</li>
+<li>This readme.html file is supplied also as your overall guide.</li>
+</ol>
+
+<h3>Preinstall instructions</h3>
+<ol>
+<li>You should have downloaded this free plugin from <a href="http://geotargetingscripts.com/" target="_blank">GeoTargetingScripts.com</a> ( or WordPress.org ) and unzipped the files if you are reading these instructions. If you do not have the plugin you can <a href="http://geotargetingscripts.com/" target="_blank">download it here</a>.</li>
+<li>This plugin requires PHP version 5. Learn how to find out what PHP version you are using <a href="http://geotargetingscripts.com/mini-tutorials/what-php-version-upgrade-to-php5/" target="_blank">here</a>. If you are currently using PHP <5 and if your host supports PHP5 and the following upgrade method, you should be able to quickly upgrade your hosting to PHP5 by adding the following statement to your .htaccess file: <em>AddHandler x-httpd-php5 .php</em> (click <a href="http://geotargetingscripts.com/mini-tutorials/what-php-version-upgrade-to-php5/" target="_blank">here</a> for more information).</li>
+<li>Be sure you upload the unzipped files to your server in "binary" mode when using your FTP software (it is the database that primarily requires binary mode for uploading). Click <a href="http://geotargetingscripts.com/mini-tutorials/uploading-files-in-binary-mode-with-filezilla/" target="_blank">here</a> for more information. You may also upload the entire zip file first, then unzip it on the server.</li>
+</ol>
+
+<h3>Installing and using the WordPress plugin</h3>
+<ol>
+<li>Upload the entire contents of the 'magiks_geo_lite' folder (including the folder itself) to the /wp-content/plugins/ folder in your WordPress installation.</li>
+<li>Login to your WordPress account as an administrator and 'Activate' the 'MaGiKS Geo Country Lite' plugin on the Plugins page (/wp-admin/plugins.php).</li>
+<li>You can now display country-targeted messages using WordPress shortcodes. The shortcodes can be used in posts, pages and widgets. Additionally, with a bit of formatting (shown below), the shortcodes can be used in template/theme files as well.</li>
+<li>To simply <em>display</em> the country name or show the country's flag you can use the defined tokens as well as the [m_quickgeo] shortcode. Here are the tokens that can be used:<br /><br />{flag-large} - displays a larger flag of the visitor's country (image width: 80px, height: varies slightly for each flag)<br />{flag-small} - displays a smaller flag of the visitor's country (image width: 16px, height: 11px)<br />{country} - displays the 2-character country code (i.e. CA)<br />{country-name} - displays the name of the country (i.e. Canada)<br />{ip-address} - displays the IP Address of the visitor</li>
+<li>As an example, if you run an e-commerce site that ships worldwide, you can use tokens in the [m_quickgeo] shortcode like so:<br /><br />In posts/pages/widgets:<pre>[m_quickgeo]{flag-large} Shipping directly to {country-name}![/m_quickgeo]</pre>In your template:<pre>&lt?php
+if (class_exists('magiks_geo_country_shortcode_class'))
+{
+   echo do_shortcode('[m_quickgeo]{flag-large} Shipping directly to {country-name}![/m_quickgeo]');
+}
+?&gt;</pre></li>
+</ol>
+
+<p style="background-color: rgb(255, 255, 224); padding: 5px; border: 1px solid rgb(230, 219, 85);"><strong>Want More Geo Targeting Capabilities?</strong><br>If you are looking for "conditional" targeting, allowing you to display different content ( such as ads ) for each country, get the <a href="http://geotargetingscripts.com/products/geo-country-bundle/" style="text-decoration: underline; color: rgb(0, 0, 0);">Geo Country Bundle</a> ( which in addition to the conditional targeting, includes BOTH a WordPress plugin AND PHP Script! )</p>
+
+<h3>Database upgrade</h3>
+<p>This product includes GeoLite data created by MaxMind, available from http://www.maxmind.com/.<br /><br />Although not necessary, a new version is available for download each month. The compressed version can be found here: <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz">http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz</a>. After unzipping (using the <a href="http://www.rarlab.com/download.htm" target="_blank" rel="nofollow">RAR utility</a>, you can unzip the compressed database, which is in .gz format), you can replace the database file: GeoIP.dat found in: /magiks_geo_lite/GeoIP/ (be sure to upload the database in "binary" format, click <a href="http://geotargetingscripts.com/mini-tutorials/uploading-files-in-binary-mode-with-filezilla/" target="_blank">here</a> for more information).</p>
+
+<h3>Need more help and support?</h3>
+<p>We provide support at GeoTargetingScripts.com via our <a href="http://geotargetingscripts.com/live-support/" target="_blank">Live Support</a>.</p>
+
+</div>
+</div>
+
+</body>
+</html>
